@@ -1,27 +1,68 @@
 {
-  "name": "Yusuf",
-  "address": "Bekasi, Jawa Barat",
-  "email": "yusuf@email.com",
-  "phone": "081234567890",
-  "target_roles": [
-    "RPA Developer",
-    "Automation Developer",
-    "Python Automation"
+  "candidate": {
+    "name": "Yusuf",
+    "target_roles": [
+      "Automation Engineer",
+      "RPA Developer",
+      "Python Developer",
+      "Web Scraping Specialist",
+      "AI Workflow Specialist",
+      "Full Stack Developer"
+    ],
+    "experience_years": 3,
+    "location": "Bekasi, West Java, Indonesia",
+    "work_preferences": {
+      "arrangements": ["Remote", "Hybrid"],
+      "expected_salary_min_idr": 10000000,
+      "notice_period": "Immediate / 2 weeks"
+    },
+    "languages": [
+      "Indonesian (Native)",
+      "English (Professional / Technical Working Proficiency)"
+    ]
+  },
+  "skills": {
+    "primary_technical": [
+      "Python",
+      "AsyncIO",
+      "Playwright",
+      "Web Scraping & Reverse Engineering",
+      "REST APIs & Webhooks",
+      "CodeIgniter 3",
+      "PHP",
+      "MySQL",
+      "SQL Server",
+      "JavaScript",
+      "UiPath",
+      "Power Automate Desktop"
+    ],
+    "automation_and_ai": [
+      "LLM Integration (Groq, Gemini, OpenAI APIs)",
+      "Agentic Workflows",
+      "Data Pipelines & OCR (Tesseract)",
+      "Document Data Extraction",
+      "No-Code / Low-Code Automation (Adaptable to n8n, Make, Zapier)"
+    ],
+    "tools_and_environment": [
+      "Git & GitHub",
+      "VS Code",
+      "Windows / PowerShell",
+      "XAMPP",
+      "Postman"
+    ]
+  },
+  "key_highlights": [
+    "Proven experience building end-to-end custom automation tools, web scrapers, and AI-driven document extraction pipelines.",
+    "Strong foundation in core programming (Python, APIs, SQL), making it easy to adapt quickly to low-code tools like n8n, Make, or Zoho CRM.",
+    "Experience creating interactive automation notifications via Telegram Bot and generating automated .docx reports/documents.",
+    "Focus on business ROI, quantifying automation impact in terms of hours saved and operational efficiency."
   ],
-  "keywords": [
-    "UiPath",
-    "Python",
-    "Playwright",
-    "Power Automate",
-    "SQL Server"
-  ],
-  "excluded_keywords": [
-    "intern",
-    "internship",
-    "magang",
-    "unpaid"
-  ],
-  "preferred_locations": [],
-  "minimum_salary": null,
-  "minimum_score": 75
+  "hard_filters": {
+    "excluded_keywords": [
+      "Sales Representative",
+      "Call Center",
+      "Data Entry Clerk",
+      "Graphic Designer"
+    ]
+  }
 }

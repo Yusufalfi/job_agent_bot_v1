@@ -1,0 +1,27 @@
+{
+  "name": "Yusuf",
+  "address": "Bekasi, Jawa Barat",
+  "email": "yusuf@email.com",
+  "phone": "081234567890",
+  "target_roles": [
+    "RPA Developer",
+    "Automation Developer",
+    "Python Automation"
+  ],
+  "keywords": [
+    "UiPath",
+    "Python",
+    "Playwright",
+    "Power Automate",
+    "SQL Server"
+  ],
+  "excluded_keywords": [
+    "intern",
+    "internship",
+    "magang",
+    "unpaid"
+  ],
+  "preferred_locations": [],
+  "minimum_salary": null,
+  "minimum_score": 75
+}
