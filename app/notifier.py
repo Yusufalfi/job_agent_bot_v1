@@ -27,7 +27,7 @@ class TelegramNotifier:
             f"⭐ **Skor AI:** {score}/100\n\n"
             f"💡 **Alasan:** {reason}\n\n"
             f"🔗 [Link JobStreet]({job.get('url')})\n\n\n"
-            f"💡 **Mau di buatkan cover letter juga ? klik ya:**"
+            f"💡 **Mau dibuatkan cover letter juga? klik ya **"
         )
 
         job_id = job.get('job_id', 'unknown')
@@ -59,6 +59,10 @@ class TelegramNotifier:
             if response.status_code == 200:
                 logging.info(f"Notifikasi Telegram dengan tombol terkirim untuk: {job.get('title')}")
             else:
-                logging.error(f"Gagal mengirim Telegram: {response.text}")
+                # Cek apakah respons berupa HTML (indikasi diblokir firewall/proxy kantor)
+                if "<html" in response.text.lower() or "<doctype" in response.text.lower():
+                    logging.error("Gagal mengirim Telegram: Koneksi diblokir oleh firewall jaringan kantor.")
+                else:
+                    logging.error(f"Gagal mengirim Telegram: {response.text}")
         except Exception as e:
             logging.error(f"Error koneksi ke Telegram API: {e}")
